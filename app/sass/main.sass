@@ -1,0 +1,430 @@
+@import "reset"
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "media"
+* 
+    box-sizing: border-box
+
+body 
+	font-size: 14px
+	min-width: 320px
+
+.container-fluid 
+	max-width: 1200px!important 
+
+
+/* HEADER */
+
+.header__top-sidebar 
+	background-color: $header-bg
+	height: 40px
+	width: 100%
+
+.header__nav-item 
+	display: inline-block	
+	
+.header__nav-link
+	line-height: 40px
+	color: $header-font
+	font-size: 12px
+	font-family: "Roboto-Light", sans-serif
+	padding-right: 20px
+	&:hover,  &:active, &:focus
+		color: $white
+		text-decoration: none
+.header__phone
+	display: inline-block
+	float: right
+	margin-right: 55px
+
+
+.icon-phone 
+	background: url('../img/icon-phone.png') no-repeat
+	width: 25px
+	height: 35px
+	background-position: 0px 10px
+	float: left
+	margin-right: 5px
+.header__phone-link	
+	display: inline-block			
+	margin-top: 6px
+	font-size: 20px
+	color: $white
+	font-family: "PFDINTEXTCONDPRO-MEDIUM", sans-serif
+	&:hover, &:active, &:focus
+		text-decoration: none
+		color: $white
+	
+.header__account-wrap 
+	float: right
+	background-color: #b5dfe8
+	padding: 0px
+	margin: 0px
+	line-height: 36px
+	width: 350px
+	height: 40px
+	position: relative
+
+	&:before
+		content: ""
+		position: absolute
+		left: -31px;
+		bottom: 0px;
+		border: 27px solid transparent;
+		border-bottom: 61px solid #b5dfe8;
+
+.header__account-wrap a:hover
+	text-decoration: none
+	cursor: pointer
+		
+
+.header__authorize	
+	position: relative
+	display: inline-block
+
+
+	&:after
+		content: ""		
+		background-color: #323131
+		width: 1px
+		height: 20px
+		position: absolute
+		top: 8px
+		left: 165px
+
+			
+
+.auth-ava
+	background: url('../img/auth-ava.png') no-repeat
+	width: 28px
+	height: 28px	
+	background-position: 0px 0px
+	float: left
+	margin: 3px 15px
+
+.auth-name
+	font-size: 12px
+	font-family: "Roboto-Light", sans-serif
+	color: #323131
+
+.header__dropdown-menu	
+	-moz-column-count: 2 
+	-webkit-column-count: 2
+	left: -31px!important
+	display: none;
+	float: left;
+	min-width: 381px!important
+	padding: 30px 40px!important
+	margin: 3px 0 0!important
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;	
+	border: none!important
+	border-radius: 0!important
+	-webkit-box-shadow: none!important
+	box-shadow: none!important
+	background-color: #b5dfe8!important
+
+.header__dropdown-menu-link
+	font-size: 14px
+	font-family: "Roboto-Light", sans-serif
+.header__dropdown-menu-item .header__dropdown-menu-link:hover
+	text-decoration: underline
+	background-color: transparent
+
+
+.auth-arrow 
+	content: ""
+	border-left: 1px solid #343434
+	border-bottom: 1px solid #343434
+	width: 6px
+	height: 6px
+	display: inline-block
+	transform: rotate(-45deg)
+	position: absolute
+	top: 14px
+	left: 126px
+
+.header__cart
+	display: inline-block
+	margin-left: 78px
+
+
+.icon-cart 
+	background: url('../img/icon-cart.png') no-repeat
+	width: 28px
+	height: 38px
+	background-position: 0px 5px
+	float: left
+	margin-right: 5px
+
+.header__cart-total
+	color: #d6014b
+	font-family: "PFDINTEXTCONDPRO-REGULAR", sans-serif
+	font-size: 14px
+	margin-right: 20px
+	position: relative
+	bottom: 10px
+
+.header__cart-sum
+	font-family: "PFDINTEXTCONDPRO-REGULAR", sans-serif
+	font-size: 18px
+	color: #323131
+/* HEADER */
+ 
+
+.navbar-header
+	height: 100px
+
+/* .nav.navbar-nav	
+	margin-top: 30px
+	display: inline-block */
+.navbar.navbar-default	
+	background-color: #ffffff!important
+	border: none!important
+	li		
+		a 
+			font-family: "Roboto-Medium", sans-serif
+			text-transform: uppercase
+			color: #323131
+			font-size: 12px
+			&:hover
+				color: #d6014b
+.nav > li > a:focus, .nav > li > a:hover
+	background-color: transparent!important
+
+
+.navbar-header-form.navbar-form 
+	margin-top: 40px
+	.form-control
+		width: 240px
+		border: none
+		box-shadow: none
+		font-family: "Roboto-Light", sans-serif
+		font-size: 12px
+	.fa-search
+		font-size: 20px
+		font-weight: 100
+
+
+/* .navbar-toggle .icon-bar:nth-child(2) 
+    top: 1px!important
+
+.navbar-toggle .icon-bar:nth-child(3) 
+    top: 2px!important
+    
+.navbar-toggle .icon-bar 
+    position: relative!important
+    transition: all 200ms ease-in-out!important
+    
+.navbar-toggle.active .icon-bar:nth-child(1) 
+    top: 6px!important
+    transform: rotate(225deg)
+    
+.navbar-toggle.active .icon-bar:nth-child(2) 
+    display: none
+    
+    
+.navbar-toggle.active .icon-bar:nth-child(3) 
+    top: -6px
+    transform: rotate(145deg)
+     
+
+
+
+
+
+
+
+
+/* SLIDER */
+.home-slider
+	position: relative
+	.carousel-control.left, .carousel-control.right  
+		background-image: none
+
+.slider-chevron-left
+	border: 55px solid transparent
+	border-left: 55px solid #6b6c6e
+	display: block
+	width: 0
+	height: 0
+	top: 50%	
+	transform: translateY(-50%)
+	position: absolute	
+	&:hover
+		border-left: 55px solid #252525	
+	&:after
+		width: 15px
+		height: 15px
+		border-left: 1px solid #b6b6b7
+		border-bottom: 1px solid #b6b6b7
+		transform: rotate(45deg)
+		display: block
+		position: absolute		
+		content: ""
+		left: -39px
+		top: -6px
+
+.slider-chevron-right
+	border: 55px solid transparent
+	border-right: 55px solid #6b6c6e
+	display: block
+	width: 0
+	height: 0
+	top: 50%	
+	transform: translateY(-50%)
+	position: absolute	
+	right: 0
+	&:hover
+		border-right: 55px solid #252525	
+	&:after
+		width: 15px
+		height: 15px
+		border-left: 1px solid #b6b6b7
+		border-bottom: 1px solid #b6b6b7
+		transform: rotate(-135deg)
+		display: block
+		position: absolute		
+		content: ""
+		left: 24px
+		top: -6px
+
+
+.carousel-image
+	/* min-width: 1170px */
+	width: 100%
+	height: 100%
+
+.home-slider-indicators.carousel-indicators
+	bottom: -40px
+	li 
+	    display: inline-block
+	    width: 12px
+	    height: 12px
+	    margin-right: 13px
+	    text-indent: -999px
+	    cursor: pointer
+	    background-color: #d7d7d7	   
+	    border: none
+	li.active
+	   background-color: #d6014b
+
+.carousel-caption.carousel-content
+	text-align: left
+	right: 56%;
+	left: 10%;
+	text-shadow: none
+	color: #323131
+	top: 8%	
+	h1 
+		font-family: "PFDINTEXTCONDPRO-THIN", sans-serif
+		line-height: 60px
+		text-transform: uppercase
+		margin-bottom: 35px
+		font-size: 50px
+		span 
+			font-family: "PFDINTEXTCONDPRO-MEDIUM", sans-serif
+	p 
+		font-family: "Roboto-Light", sans-serif
+		font-size: 14px	
+.carousel-link-more	
+	position: relative
+	a 
+		text-transform: uppercase
+		font-family: "PFDINTEXTPRO-MEDIUM", sans-serif
+		font-size: 13px	
+		color: #323131		
+		margin-top: 17%
+		display: block
+		&:hover 
+			text-decoration: none
+		&:after
+			content: ""
+			height: 1px
+			width: 15px
+			background-color: #d6014b
+			position: absolute
+			bottom: 9px
+			left: 85px
+		&:before
+			content: ""
+			width: 8px
+			height: 8px
+			border-left: 1px solid #d6014b
+			border-bottom: 1px solid #d6014b
+			position: absolute
+			bottom: 5px
+			left: 93px
+			transform: rotate(225deg)
+
+
+/* SLIDER */
+
+.news-images
+	margin-top: 70px
+.news-images__image
+	width: 100%
+	max-height: 280px
+	margin-bottom: 30px
+.news-images__image.news-images__image_long-image
+	min-height: 590px
+	height: 100%
+
+
+
+
+
+/* novelties */
+
+section
+	.section-title
+		font-size: 34px
+		font-family: "PFDINTEXTCONDPRO-REGULAR", sans-serif
+		text-transform: uppercase
+		text-align: center		
+		&:before
+			content: "/"
+		&:after
+			content: "/"			
+
+.products-carousel__list-wrap 
+    position: relative
+
+.products-carousel__list 
+    height: 380px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+.swiper-wrapper 
+    box-sizing: content-box;
+    display: flex;
+    height: 100%;
+    position: relative;
+    transition-property: transform, -webkit-transform;
+    width: 100%;
+    z-index: 1;
+
+.swiper-slide 
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+.products-carousel__item 
+    border: 3px solid transparent;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 25px 15px 0;
+    position: relative;
+    text-align: center;
+    transition: border-color 0.5s ease 0s;
+.swiper-container 
+    width: 600px;
+    height: 300px;
